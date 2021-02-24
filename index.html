@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <link rel="stylesheet" href="index.css">
+    <title>INDEX</title>
+</head>
+<body>
+    <div class="head">
+        <h1>LecturEmpire</h1>
+    </div>
+
+    <div class="form">
+        <div class="dropdown">
+            <select name="" id="college" class="college">
+                <option value="UCOE" selected>Universal College of Engineering Mumbai</option>
+                <option value="thakur">Thakur College of Engineering</option>
+                <option value="iitkaman">IIT Kaman</option>
+            </select>
+        </div>
+
+
+        <div class="dropdown">
+            <select name="" id="semister" class="semister">
+                <option value="1" selected>Sem 1</option>
+                <option value="2">Sem 2</option>
+                <option value="3">Sem 3</option>
+                <option value="4">Sem 4</option>
+                <option value="5">Sem 5</option>
+                <option value="6">Sem 6</option>
+                <option value="7">Sem 7</option>
+                <option value="sem8">Sem 8</option>
+            </select>
+        </div>
+
+        <div class="dropdown">
+            <select name="" id="department" class="department">
+                <option value="comps" selected>Computer</option>
+                <option value="it">IT</option>
+                <option value="mech">Mech</option>
+                <option value="extc">EXTC</option>
+                <option value="etrx">ETRX</option>
+            </select>
+        </div>
+
+        <div class="dropdown">
+            <select name="" id="division" class="division">
+                <option value="a" selected>A</option>
+                <option value="b">B</option>
+            </select>
+        </div>
+
+        <button type="submit" onclick="getLink()">Get Link</button>
+
+        <div class="openLecture" id="openLecture"></div>
+
+        <h1 id="finalT" style="display: none;"></h1>
+        <!-- <a href="" style="display: none;" id="finalB">BUTTON</a> -->
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

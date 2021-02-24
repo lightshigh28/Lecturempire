@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+}
+
+.head{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: #fff; */
+}
+
+.form{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown{
+    padding: 10px;
+    font-size: 20px;
+}
+
+button{
+    font-size: 30px;
+}
+
+.division, .department, .semister, .college{
+    font-size: 2vh;
+}
